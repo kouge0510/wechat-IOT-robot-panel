@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="header">
+    <text class="title">Grafana 数据展示</text>
+  </view>
+
+  <view class="content">
+    <block wx:if="{{loading}}">
+      <text>加载中...</text>
+    </block>
+    <block wx:else>
+      <view wx:for="{{dashboards}}" wx:key="id" class="dashboard-item">
+        <text>{{item.title}}</text>
+      </view>
+    </block>
+  </view>
+</view>

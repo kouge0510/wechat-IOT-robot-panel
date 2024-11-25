@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.header {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  color: #333;
+  font-weight: bold;
+}
+
+.button-container {
+  margin-top: 50px;
+}
+
+.nav-button {
+  width: 250px;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+  transform: scale(1.1); /* Hover 放大效果 */
+}

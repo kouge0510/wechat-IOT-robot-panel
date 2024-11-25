@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/index/index",
+	  "pages/main/index",
+    "pages/logs/logs",
+    "pages/grafana/grafana"
+
+    
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}
