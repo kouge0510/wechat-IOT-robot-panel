@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#37373b",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "grafana参数调取",
+  "backgroundColor": "#efeff4",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh":true
+
 }

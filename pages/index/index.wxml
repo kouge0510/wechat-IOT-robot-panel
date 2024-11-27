@@ -1,12 +1,31 @@
 <view class="container">
-  <view class="header">
-    <text class="title">欢迎来到主页</text>
-  </view>
+  <!-- 轮播图 -->
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{banner_list[0].banner}}">
+      <swiper-item>
+        <image src="{{item.pic_url}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
 
-  <!-- 跳转按钮 -->
-  <view class="button-container">
-    <button class="nav-button" bindtap="goToMain">跳转到主页</button>
-    <button class="nav-button" bindtap="goToLogs">跳转到日志</button>
-    <button class="nav-button" bindtap="goToGrafana">跳转到 Grafana</button>
+
+  <!-- 分隔线 -->
+  <view class='separator'></view>
+
+  <!-- 热卖商品列表 -->
+  <view class='hotgoodcontainer'>
+    <view class='gooditem' wx:for="{{hotgoods}}" wx:for-index="idx" wx:for-item="good" bindtap="onProductClick" data-id="{{good.id}}" data-url="{{good.url}}">
+      <view class='imgview'>
+        <image class='productimg' src='{{good.pic_url}}'/>
+      </view>
+      <view>{{good.name}}</view>
+    </view>
   </view>
+</view>
+<!-- 作者信息 -->
+<view class="author-info">
+  <text>作者: 抠哥 本小程序用于机器人调试</text>
+  <text>© 2024  抠哥  所有版权 致敬传奇</text>
+  
 </view>

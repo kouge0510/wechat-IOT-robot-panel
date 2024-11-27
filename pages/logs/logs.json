@@ -1,3 +1,10 @@
 {
-    "navigationBarTitleText": "查看启动日志"
+  "navigationBarBackgroundColor": "#37373b",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "查看物联网文档",
+  "backgroundColor": "#efeff4",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "towxml":"/towxml/towxml"
+  }
 }

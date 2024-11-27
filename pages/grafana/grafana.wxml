@@ -1,16 +1,47 @@
 <view class="container">
-  <view class="header">
-    <text class="title">Grafana 数据展示</text>
+  <!-- 加载动画 -->
+  <view wx:if="{{loading}}" class="loading" animation="{{animationData}}">
+    <text class="loading-text">加载中...</text>
   </view>
 
-  <view class="content">
-    <block wx:if="{{loading}}">
-      <text>加载中...</text>
-    </block>
-    <block wx:else>
-      <view wx:for="{{dashboards}}" wx:key="id" class="dashboard-item">
-        <text>{{item.title}}</text>
+  <!-- 仪表盘列表展示  没有加载完不显示 -->
+  <view wx:else>
+  
+    <text class="url-text2 url-display">仪表盘列表展示</text>
+    <view wx:for="{{dashboards}}" wx:key="id" bindtap="selectDashboard" data-uid="{{item.uid}}" data-url="{{item.url}}" class="dash-item">
+      <text class="dashboard-title">{{item.title}}</text>
+    </view>
+      <!-- 显示选中的完整 URL -->
+    <text class="url-text2 url-display">仪表盘完整链接</text>
+    <view wx:if="{{grafanaUrl}}" class="url-display" animation="{{urlAnimationData}}">
+      
+    <text class="url-text" bindlongtap="onLongTap">{{grafanaUrl}}</text>
+    
+    </view>
+    <!-- 预警数据 -->
+    <text class="url-text2 url-display">预警数据完整展示</text>
+
+    <block wx:if="{{alerts.length > 0}}">
+      <view class="alerts-list">
+        <block wx:for="{{alerts}}" wx:key="id">
+          <view class="alert-item">
+            <text class="alert-title">{{item.title}}</text>
+            <text class="alert-date">更新于: {{item.updated}}    alert id为: {{item.uid}}
+            alert condition为: {{item.condition}}
+            </text>
+
+          </view>
+        </block>
       </view>
     </block>
+    <block wx:else>
+      <view class="loading">暂无数据</view>  
+      <!-- 没有数据则不展示 -->
+    </block>
+
+     <!-- 仪表盘列表展示  没有加载完不显示 -->
   </view>
+  
 </view>
+
+

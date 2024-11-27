@@ -1,8 +1,31 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+/* 目录部分样式 */
+.toc {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 90vh;
+  overflow-y: auto;
 }
-.log-item {
-  margin: 10rpx;
+
+/* 目录项样式 */
+.toc-item {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* 文章内容的样式 */
+.article {
+  padding-left: 120px; /* 为目录部分留出空间 */
+  padding-right: 20px;
+}
+
+/* 可滚动的内容区域 */
+scroll-view {
+  padding-left: 120px; /* 为目录部分留出空间 */
 }

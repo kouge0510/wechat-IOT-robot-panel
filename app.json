@@ -3,7 +3,8 @@
     "pages/index/index",
 	  "pages/main/index",
     "pages/logs/logs",
-    "pages/grafana/grafana"
+    "pages/grafana/grafana",
+    "pages/threejs/threejs"
 
     
     
@@ -11,7 +12,10 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "极速分拣机器人面板",
     "navigationBarTextStyle":"black"
+  },
+  "usingComponents": {
+    "towxml":"/towxml/towxml"
   }
 }

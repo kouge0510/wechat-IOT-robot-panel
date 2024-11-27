@@ -27,5 +27,7 @@ App({
   globalData:{
     
     userInfo:null
-  }
+  },
+  	// 引入`towxml3.0`解析方法
+	towxml:require('/towxml/index')
 })

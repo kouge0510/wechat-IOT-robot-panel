@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#37373b",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "极速分拣机器人面板",
+  "backgroundColor": "#efeff4",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh":true
 }
