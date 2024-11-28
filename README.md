@@ -92,7 +92,8 @@ wx.request({
 ## 截图展示
 
 ### 主界面
-![image](https://github.com/user-attachments/assets/dfd70e6b-5946-4940-9e0e-b14b9f4b252c)
+![image](https://github.com/user-attachments/assets/b01b05d0-a9af-43c7-b62d-9b9e377cf43c)
+
 
 
 ### 3D模型
