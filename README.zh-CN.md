@@ -1,6 +1,6 @@
 
-
 # 极速分拣机器人小程序
+[English](./README.md) | [简体中文](./README.zh-CN.md)
 
 ## 项目简介
 
